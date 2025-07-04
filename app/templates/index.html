@@ -14,15 +14,14 @@
     
     <div class = saudacao>    
         <h1>Bem-vindo à aula de Flask!</h1>
-        <h5>Bem vindo, {{dicionario.nome}}</h5>
-        <p>Idade: {{dicionario.idade}}</p>
-        <h5>Seus interesses: </h5>
+        <h2>Bem vindo, {{dicionario.nome}}</h2>
+        <h4>Seus principais interesses: </h4>
         <ul>
             {% for interesse in dicionario.interesses %}
                 <li>{{ interesse }}</li>
             {% endfor %}
         </ul>
-        <a href="{{ url_for('contato') }}">MAIS</a>
+        <a href="{{ url_for('sobre') }}">VEJA MAIS</a>
     </div>
     <footer>
         <p>&copy; 2023 Aula-Flask. Todos os direitos reservados.</p>
